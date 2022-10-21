@@ -1,0 +1,14 @@
+{
+    "name": "nctv-monitor",
+    "dependencies": {
+        "electron": "^22.0.0-alpha.7"
+    },
+    "scripts": {
+        "start": "electron ."
+    },
+    "main": "main.js",
+    "version": "0.0.0",
+    "license": "MIT",
+    "description": "",
+    "author": "Daniel"
+}
