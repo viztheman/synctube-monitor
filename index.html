@@ -1,1 +1,17 @@
-404: Not Found
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>NCTV Monitor</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-eval';" />
+	<link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+<body>
+    <div>
+		<label for="synctube-url">NCTV Url</label>
+		<input id="synctube-url" type="text" style="width: 300px;" data-bind="value: synctubeUrl, event: {change: saveSettings}" />
+	</div>
+	<script src="./node_modules/knockout/build/output/knockout-latest.js"></script>
+	<script src="./renderer.js"></script>
+</body>
+</html>
