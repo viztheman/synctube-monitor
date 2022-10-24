@@ -1,6 +1,6 @@
 {
   "name": "synctube-monitor",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "main.js",
   "author": "Daniel Hammond <viztheman@protonmail.com>",
   "license": "MIT",
