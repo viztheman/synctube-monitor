@@ -42,11 +42,20 @@ async function pingSite() {
 	tray.icon = isUp ? ICON_UP_PATH : ICON_DOWN_PATH;
 
 	if (!isUp) {
+		checkTimer.stop();
+		checkTimer.interval = 10000;
+		checkTimer.start();
+
 		animationToggle = false;
 		animationTimer.start();
 	}
-	else if (animationTimer)
+	else if (animationTimer) {
 		animationTimer.stop();
+
+		checkTimer.stop();
+		checkTimer.interval = 60 * 60 * 1000;
+		checkTimer.start();
+	}
 }
 
 function setupIpc() {
