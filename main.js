@@ -20,7 +20,7 @@ const settings = new Settings();
 const ping = new Ping(settings);
 
 const checkTimer = new Timer();
-checkTimer.interval = 60 * 60 * 1000;
+checkTimer.interval = 30 * 60 * 1000;
 checkTimer.callback = pingSite;
 
 const animationTimer = new Timer();
